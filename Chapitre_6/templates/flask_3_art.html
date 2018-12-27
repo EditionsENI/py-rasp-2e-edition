@@ -1,0 +1,19 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Article {{ art }} </title>
+</head>
+<body>
+    <h1>Article: {{ art }} </h1>
+    {% if art == 1 %}
+    <p>Article: Chemise</p>
+    {% elif art == 2 %}
+    <p>Article: Chaussures</p>
+    {% elif art == 3 %}
+    <p>Article: Pantalon</p>
+    {% else %}
+    <h2>Article non reconnu !</h2>
+    <p>Seuls les articles 1, 2 et 3 sont déclarés.</p>
+    {% endif %}
+</body>
+</html>

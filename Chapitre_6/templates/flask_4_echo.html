@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Echo!</title>
+  </head>
+
+  <form action="/echo" method="POST">
+  <input name="texte">
+  <input type="submit" value="Envoyer">
+  </form>
+  {% if texte %}
+  <p>Vous avez écrit: <b>{{ texte }}</b></p>
+  {% else %}
+  <p>Tapez du texte dans la zone d'édition.</p>
+  {% endif %}
+</html>
